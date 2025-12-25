@@ -12,6 +12,8 @@
         <nav>
             <a href="index-en.html">Home</a>
             <a href="privacy-en.html">Privacy Policy</a>
+            <a href="terms-en.html">Terms of Service</a>
+            <a href="https://apps.apple.com/account/subscriptions" target="_blank">Manage Subscription</a>
             <div class="language-selector">
                 <a href="privacy.html">简中</a>
                 <a href="privacy-zh-TW.html">繁中</a>
@@ -23,109 +25,147 @@
     <main>
         <section class="privacy-section">
             <h2>Privacy Policy</h2>
-            <p>Last Updated: September 19, 2025</p>
-            <p><strong>App Version</strong>: iOS 15.0+</p>
-            <p><strong>Developer</strong>: Aaron Shue</p>
+            <p>Last Updated: December 25, 2025</p>
             
-            <h3>1. Privacy Protection Commitment</h3>
-            <p>FreeBreath is an iOS app focused on breathing meditation. Our commitment to user privacy protection:</p>
-            <div class="privacy-highlights">
-                <div class="privacy-item">
-                    <h4>🔒 Completely Offline Operation</h4>
-                    <ul>
-                        <li>The app functions normally without internet connection</li>
-                        <li>All features run locally on your device</li>
-                        <li>No data is sent to any servers</li>
-                    </ul>
-                </div>
-                <div class="privacy-item">
-                    <h4>🚫 Zero Data Collection</h4>
-                    <ul>
-                        <li>No user registration or login required</li>
-                        <li>No personal information collected</li>
-                        <li>No tracking of user behavior</li>
-                        <li>No access to other data on your device</li>
-                        <li>No integration of any third-party analytics or advertising SDKs</li>
-                    </ul>
-                </div>
+            <h3>Overview</h3>
+            <p>FreeBreath respects and protects user privacy. We commit to not collecting your personal identity information, and core features work completely offline.</p>
+            
+            <h3>Information We Collect</h3>
+            
+            <h4>1. Automatically Collected Information</h4>
+            
+            <div class="privacy-item">
+                <h5>📱 Subscription Information (via Apple Services)</h5>
+                <ul>
+                    <li>Subscription status (active/expired)</li>
+                    <li>Purchase records</li>
+                    <li>Subscription type (monthly/annual)</li>
+                </ul>
+                <p><strong>Note</strong>: This information is managed by Apple. We cannot access your payment information, name, or email.</p>
             </div>
-
-            <h3>2. App Permissions Explanation</h3>
-            <p>To provide a complete functional experience, FreeBreath requests the following system permissions:</p>
+            
+            <div class="privacy-item">
+                <h5>💾 Local Usage Statistics</h5>
+                <ul>
+                    <li>Daily completed training count</li>
+                    <li>User preference settings (selected breathing mode, sounds, duration)</li>
+                    <li>Trial period start date</li>
+                </ul>
+                <p><strong>Note</strong>: This data is only stored locally on your device. We cannot access it.</p>
+            </div>
+            
+            <h4>2. Optional Cross-Device Sync</h4>
+            
+            <div class="privacy-item">
+                <h5>☁️ Legacy User Identity (via iCloud)</h5>
+                <ul>
+                    <li>Only used to identify users from the paid app era</li>
+                    <li>Synced via encrypted iCloud, we cannot access the content</li>
+                </ul>
+                <p><strong>Note</strong>: This is an optional feature, depending on your iCloud settings.</p>
+            </div>
+            
+            <h3>We Do Not Collect</h3>
+            <div class="third-party-info">
+                <ul>
+                    <li>❌ Personal information such as name, email, or phone number</li>
+                    <li>❌ Breathing or body data during training</li>
+                    <li>❌ Location information</li>
+                    <li>❌ Contacts or photos</li>
+                    <li>❌ Device identifiers (IDFA)</li>
+                </ul>
+            </div>
+            
+            <h3>Data Storage Locations</h3>
+            <div class="data-storage-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Storage Location</th>
+                            <th>Access Permission</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Usage Preferences</td>
+                            <td>Your device locally</td>
+                            <td>Only you can access</td>
+                        </tr>
+                        <tr>
+                            <td>Subscription Status</td>
+                            <td>Apple servers</td>
+                            <td>Managed by Apple</td>
+                        </tr>
+                        <tr>
+                            <td>Legacy User ID</td>
+                            <td>iCloud</td>
+                            <td>Encrypted sync</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Data Usage Purpose</h3>
+            <p>The limited data we collect is only used for:</p>
+            <ul>
+                <li>Verifying subscription permissions</li>
+                <li>Providing personalized settings</li>
+                <li>Protecting legacy user benefits</li>
+                <li>Improving app functionality</li>
+            </ul>
+            
+            <div class="third-party-info">
+                <p><strong>We will NOT:</strong></p>
+                <ul>
+                    <li>❌ Sell or share your data</li>
+                    <li>❌ Use it for advertising</li>
+                    <li>❌ Create user profiles for analysis</li>
+                </ul>
+            </div>
+            
+            <h3>Third-Party Services</h3>
+            <p>We only use Apple's official services:</p>
             <div class="permissions-section">
                 <div class="permission-item">
-                    <h4>🎵 Audio Playback Permission</h4>
-                    <p><strong>Purpose</strong>: Play ambient sound effects (waves, rain, forest) and breathing guidance audio</p>
-                    <p><strong>Note</strong>: Only used for local audio file playback, no recording or network audio involved</p>
+                    <h4>Apple Subscription Service</h4>
+                    <p>Handles in-app subscriptions and purchase verification</p>
                 </div>
                 <div class="permission-item">
-                    <h4>🔔 Notification Permission</h4>
-                    <p><strong>Purpose</strong>: Send local reminder notifications when breathing training is completed</p>
-                    <p><strong>Note</strong>: Local notifications only, no push servers involved</p>
-                </div>
-                <div class="permission-item">
-                    <h4>🎧 Background Audio Permission</h4>
-                    <p><strong>Purpose</strong>: Support continued ambient sound playback when screen is locked</p>
-                    <p><strong>Note</strong>: Allows app to play audio in background, enhancing user experience</p>
-                </div>
-                <div class="permission-item">
-                    <h4>📳 Haptic Feedback</h4>
-                    <p><strong>Purpose</strong>: Provide different intensity tactile cues based on breathing phases</p>
-                    <p><strong>Note</strong>: Uses device's Core Haptics functionality to enhance immersion</p>
+                    <h4>iCloud</h4>
+                    <p>Optional cross-device data synchronization</p>
                 </div>
             </div>
-
-            <h3>3. Local Data Storage</h3>
-            <div class="storage-info">
-                <h4>📱 Local Storage Only</h4>
-                <p>The app only uses iOS system's UserDefaults to store user preference settings, including:</p>
-                <ul>
-                    <li>Selected breathing mode preferences</li>
-                    <li>Sound theme preferences</li>
-                    <li>Training duration settings</li>
-                    <li>Language selection settings</li>
-                </ul>
-                <p><strong>Important Note</strong>: This data is only stored locally on your device and will not sync to iCloud or any cloud services.</p>
-            </div>
-
-            <h3>4. Third-Party Services</h3>
+            
             <div class="third-party-info">
-                <p>We commit to:</p>
+                <p><strong>We do NOT use:</strong></p>
                 <ul>
-                    <li>❌ Not using any third-party analytics tools (such as Google Analytics, Firebase, etc.)</li>
-                    <li>❌ Not integrating any advertising SDKs</li>
-                    <li>❌ Not using any user behavior tracking services</li>
-                    <li>❌ Not connecting to any social media SDKs</li>
-                    <li>✅ Operating completely independently to protect user privacy</li>
+                    <li>❌ Third-party analytics tools (like Google Analytics)</li>
+                    <li>❌ Advertising SDKs</li>
+                    <li>❌ Data collection SDKs</li>
+                    <li>❌ Social media SDKs</li>
                 </ul>
             </div>
-
-            <h3>5. Multi-Language Support</h3>
-            <p>The app supports three languages: Simplified Chinese, Traditional Chinese, and English. The language switching feature automatically adapts by detecting system language, or users can manually select. This setting is only saved on the local device.</p>
-
-            <h3>6. Children's Privacy Protection</h3>
-            <p>Our app is suitable for users of all ages. Since we do not collect any personal information, it fully complies with children's privacy protection requirements. Parents can confidently let their children use this app for breathing exercises.</p>
-
-            <h3>7. Data Security Measures</h3>
-            <div class="security-measures">
-                <ul>
-                    <li>🔐 App uses sandbox mechanism for isolated data storage</li>
-                    <li>🔐 No network transmission involved, avoiding data leak risks</li>
-                    <li>🔐 Follows iOS security best practices</li>
-                    <li>🔐 Regular security reviews and updates</li>
-                </ul>
-            </div>
-
-            <h3>8. Privacy Policy Updates</h3>
-            <p>If there are any changes to our privacy policy, we will update the content on this page and notify users in appropriate locations within the app. We recommend users regularly check this page to stay informed about the latest privacy policy.</p>
-
-            <h3>9. Contact Us</h3>
+            
+            <h3>Your Rights</h3>
+            <ul>
+                <li><strong>Access Right</strong>: You can view locally stored preferences anytime</li>
+                <li><strong>Deletion Right</strong>: Uninstalling the app will delete all local data</li>
+                <li><strong>Opt-Out Right</strong>: You can disable iCloud sync functionality</li>
+            </ul>
+            
+            <h3>Children's Privacy</h3>
+            <p>FreeBreath is suitable for all ages and does not target children under 13 for data collection.</p>
+            
+            <h3>Privacy Policy Changes</h3>
+            <p>We will update this privacy policy on this page. Significant changes will be notified within the app.</p>
+            
+            <h3>Contact Us</h3>
             <div class="contact-info">
-                <p>If you have any questions or suggestions about our privacy policy, please contact us through the following methods:</p>
+                <p>For privacy-related questions, please contact:</p>
                 <ul>
                     <li><strong>Email</strong>: caresync@163.com</li>
-                    <li><strong>Business Hours</strong>: Monday to Friday 9:00-18:00 (Beijing Time)</li>
-                    <li><strong>Response Time</strong>: We will reply to your inquiry within 24 hours</li>
+                    <li><strong>Website</strong>: https://lovezenbreath.com/</li>
                 </ul>
             </div>
         </section>
@@ -133,6 +173,9 @@
     
     <footer>
         <p>&copy; 2025 FreeBreath. All rights reserved.</p>
+        <p class="attribution">
+            <small>Sound: <a href="https://freesound.org/s/795721/" target="_blank" rel="noopener">Breathing Ambient for Mindfulness by Matio888</a> (CC BY 4.0)</small>
+        </p>
     </footer>
 </body>
 </html>

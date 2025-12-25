@@ -187,6 +187,32 @@ footer {
     letter-spacing: 1px;
 }
 
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer .attribution {
+    margin-top: 0.8rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+footer .attribution:hover {
+    opacity: 1;
+}
+
+footer .attribution a {
+    color: #6b5b73;
+    text-decoration: none;
+    border-bottom: 1px dotted #6b5b73;
+    transition: all 0.3s ease;
+}
+
+footer .attribution a:hover {
+    color: #8b7d88;
+    border-bottom: 1px solid #8b7d88;
+}
+
 /* 为了避免fixed footer覆盖内容，给body添加bottom padding */
 body {
     padding-bottom: 0;
@@ -615,6 +641,279 @@ body {
     }
     
     .privacy-item, .permission-item, .storage-info, .third-party-info, .contact-info {
+        padding: 1rem;
+    }
+}
+
+/* 订阅与定价样式 */
+.subscription-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.trial-info {
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0fff0 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #28a745;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.1);
+}
+
+.trial-info h4 {
+    color: #28a745;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trial-info ul {
+    margin-left: 1.2rem;
+}
+
+.trial-info li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* 定价表格样式 */
+.pricing-table {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+.pricing-table h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.pricing-table thead {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+}
+
+.pricing-table th {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.pricing-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.pricing-table tbody tr.recommended {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border-left: 3px solid #ffc107;
+}
+
+.pricing-table tbody tr.recommended:hover {
+    background: linear-gradient(135deg, #ffe8a1 0%, #ffd54f 100%);
+}
+
+/* 订阅权益样式 */
+.subscription-benefits {
+    background: linear-gradient(135deg, #e3f2fd 0%, #f1f8ff 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+}
+
+.subscription-benefits h4 {
+    color: #007bff;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.subscription-benefits ul {
+    margin-left: 1.2rem;
+}
+
+.subscription-benefits li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* 订阅管理样式 */
+.subscription-management {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.subscription-management h4 {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.subscription-management ul {
+    margin-left: 1.2rem;
+}
+
+.subscription-management li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* FAQ对比表格样式 */
+.comparison-table {
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.comparison-table thead {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+}
+
+.comparison-table th {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+/* 数据存储表格样式 */
+.data-storage-table {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.data-storage-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.data-storage-table th,
+.data-storage-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.data-storage-table thead {
+    background: linear-gradient(135deg, #6b5b73 0%, #8b7d88 100%);
+    color: white;
+}
+
+.data-storage-table th {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.data-storage-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.data-storage-table tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+/* FAQ内嵌列表样式 */
+.faq-item ul,
+.faq-item ol {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item ul li,
+.faq-item ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* 响应式表格优化 */
+@media (max-width: 768px) {
+    .pricing-table,
+    .comparison-table,
+    .data-storage-table {
+        font-size: 0.9rem;
+    }
+    
+    .pricing-table th,
+    .pricing-table td,
+    .comparison-table th,
+    .comparison-table td,
+    .data-storage-table th,
+    .data-storage-table td {
+        padding: 0.6rem 0.5rem;
+    }
+    
+    .subscription-section {
+        gap: 1rem;
+    }
+    
+    .trial-info,
+    .subscription-benefits,
+    .subscription-management,
+    .pricing-table {
         padding: 1rem;
     }
 } 
